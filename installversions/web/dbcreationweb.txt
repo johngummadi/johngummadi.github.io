@@ -1,0 +1,32 @@
+//Database creation SQL Scripts
+
+// Books
+CREATE TABLE  `davean8_Bible`.`WebBooks` (
+`ID` INT( 10 ) UNSIGNED NOT NULL ,
+ `TranslationID` INT( 10 ) UNSIGNED NOT NULL ,
+ `FullName` VARCHAR( 25 ) CHARACTER SET ASCII COLLATE ascii_bin NOT NULL ,
+ `ShortName` VARCHAR( 10 ) CHARACTER SET ASCII COLLATE ascii_bin DEFAULT NULL ,
+ `Testament` INT( 10 ) UNSIGNED NOT NULL ,
+ `Notes` VARCHAR( 1024 ) CHARACTER SET ASCII COLLATE ascii_bin DEFAULT NULL ,
+PRIMARY KEY (  `ID` )
+) ENGINE = MYISAM DEFAULT CHARSET = latin1 COMMENT =  'World English Bible';
+
+
+// Chapters
+CREATE TABLE  `davean8_Bible`.`WebChapters` (
+`ID` INT( 10 ) UNSIGNED NOT NULL ,
+ `BookID` INT( 10 ) UNSIGNED NOT NULL ,
+ `ChapterNumber` INT( 10 ) UNSIGNED NOT NULL ,
+ `Notes` VARCHAR( 1024 ) CHARACTER SET ASCII COLLATE ascii_bin DEFAULT NULL
+) ENGINE = MYISAM DEFAULT CHARSET = latin1 COMMENT =  'WEB Chapters';
+
+
+// Verses
+CREATE TABLE  `davean8_Bible`.`WebVerses` (
+`ID` INT( 10 ) UNSIGNED NOT NULL ,
+ `ChapterID` BIGINT( 20 ) UNSIGNED NOT NULL ,
+ `VerseNumber` INT( 10 ) UNSIGNED NOT NULL ,
+ `Verse` VARCHAR( 2048 ) CHARACTER SET ASCII COLLATE ascii_bin NOT NULL ,
+ `Notes` VARCHAR( 2048 ) CHARACTER SET ASCII COLLATE ascii_bin DEFAULT NULL ,
+PRIMARY KEY (  `ID` )
+) ENGINE = MYISAM DEFAULT CHARSET = latin1 COMMENT =  'WEB verses';

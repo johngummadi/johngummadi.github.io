@@ -1,0 +1,91 @@
+
+div.scrollableContent {
+	autoScroll: true;
+	overflow:auto;
+}
+
+div.tabStyle{
+	font-family:Arial,sans-serif;
+	font-size:9px;
+	color:#ffffff;
+}
+
+div.CommentsCircle{
+	background:red;
+	height:11px;
+	width:11px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	padding:.35em;
+	text-align:center;
+	color:#ffffff;
+	font-size:8px;
+	font-weight:bold;
+}
+
+div.contentHeadersStyle{
+	color:#ffffff;
+	padding-left:.3em; 
+	padding-right:.3em; 
+	padding-top:.3em; 
+	padding-bottom:.7em; 
+	background-repeat:repeat; 
+	border-bottom: 1px solid #cccccc;
+	font-family:Arial,sans-serif;
+	font-size:small;
+	height:12px;
+	vertical-align:text-center;
+}
+
+div.contentArea {
+	font: medium small, arial, sans-serif;
+}
+
+#searchBoxDiv_content_text {
+	auto-scroll: true;
+	overflow:auto;
+}
+
+div.commenttextarea {
+	auto-scroll: true;
+	overflow:auto;
+}
+
+#searchBar {
+	width:250px;
+	padding-right:7px;
+	padding-top:0px;
+}
+
+#searchButtonID {
+	width: 65px;
+	height: 22px;
+	padding-right:1px;
+	padding-top:0px;
+	font: 12px verdana, arial, sans-serif;
+}
+
+#searchTextID {
+	height: 15px;
+	width: 200px;
+	margin-right:4px;
+	margin-top:1px;
+	font: 11px verdana, arial, sans-serif;
+}
+
+#searchDiv {
+	
+}
+
+#headerContent, #footerContent {
+	padding-top:.5em;
+}
+
+
+#booksContent, #versesContent, #chaptersContent {
+	autoScroll: true;
+	overflow:auto;
+}
+#chaptersContent {
+	font: medium small, arial, sans-serif; 
+}

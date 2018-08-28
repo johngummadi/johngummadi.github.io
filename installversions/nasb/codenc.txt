@@ -1,0 +1,99 @@
+Codes for NASB/LBLA/NBLH/AMP (3/9/2008)
+
+
+<CN>    CHAPTER ### Before each chapter (### = a number). No CHAPTER 1 in Bible text
+	  terminated with </CN>
+Capi`tulo ### Same as above but in Spanish LBLA
+
+<SN>PSALM ### - Before each Psalm terminated with </SN>
+<SN>SALMO ### - Before each Psalm (LBLA) terminated with </SN>
+
+<SB>BOOK # - 5 times in Psalms </SB>
+<SB>LIBRO ??? - 5 times in Pslams (LBLA) </SB>
+
+<BN>    Book name terminated with </BN>
+<PN>    Line is poetry - after verse number
+<PO>    Line is poetry - not after verse number
+<PE>    Poetry end and the next line is prose
+<SH>    Line is a sub-head and should be italic. Use is optional.
+        Subhead is inside these verses: Gen. 35:23, 2 Samuel 12:16,
+        1 Chron. 29:23, Acts 9:20, Acts 10:23
+	  terminated with </SH>
+<SS>    Line is a Psalm sub-head and should not be italic.
+        It's part of the Bible text. See Habakkuk 3:19
+	  terminated by </SS>
+<SF>    Before Hebrew transliteration in Psalms
+	  terminated by </SF>
+<F###>  Footnote superior - optional (### = a number) (Not
+        included if <$F is used)
+<$F     Footnote text follows. See Psalm 1,22,29,72;Isaiah 54 & Daniel 7
+>>      Ends footnote text (NASB/LBLA)
+$E>      Ends footnote text (AMP)
+<R*>    Reference superior - optional (* = a letter)
+<N#>    Note superior - optional (# = a number, not used if Footnotes are used)
+<NA>    Superior dagger in Psalm subhead
+<NB>    Superior dot in Psalm subhead
+<NC>    Superior carrot in Psalm subhead
+\       Start small caps.
+/       End small caps.
+{       Start italic
+}       End italic
+
+{{x:y}} x=book number (1=Gen, 40=Mat). y=chapter
+<PM>    New paragraph marker. Can be before verse or within a verse
+<V>     Before verse that is prose
+<P>     Before verse that is poetry
+<C>     Before chapter start that is prose
+<CC>    Before chapter start that is poetry
+<A>     Before verse that is prose, not a new paragraph, but is after poetry text. 
+        So needs special line break in paragraph settings
+<CP>    Before chapter start in Psalms
+
+<MH#####> Hebrew NAS Exhaustive Concordance Dictionary number (NASB Only)
+<MG#####> Greek NAS Exhaustive Concordance Dictionary number (NASB Only)
+
+~       If before a quote the quote should be removed for a paragraph format setting
+``      Open double quote
+"       Close double quote
+`       Open single quote
+'       Close single quote (also apostrophy)
+
+*       An * in the text marks verbs that are historical presents in
+        the Greek which have been translated with an English past tense
+        in order to conform to modern usage.
+--      Long dash
+<HL>    Special indent in Acts and Rev.
+<,>     Superior comma
+<RS>    Red letter starts
+<RT>    Red letter ends
++@      Thin Space
+
+Selah             Does not have a code but can be flush right in NASB/LBLA
+                  It is in books Ps(19) and Hab(35).
+Higgaion Selah    Occurs once in Ps(19)
+
+
+
+Used in LBLA only
+<?>     Upside down question mark.
+<!>     Upside down exclamation mark.
+n~      ~ on preceding letter. (n~)
+N~      ~ on preceding letter. (N~) 
+a`      Accent mark on preceding letter (a`).
+e`      Accent mark on preceding letter (e`).
+i`      Accent mark on preceding letter (i`).
+o`      Accent mark on preceding letter (o`).
+u`      Accent mark on preceding letter (u`).
+u<DI>   Duress's.
+U<DI>   Duress's.
+
+AMPLIFIED
+\NOTE:/ Note before Song of Solomn - book 22
++[		Open bracket in Bible text
++]		Close bracket in Bible text
+@[		Open bracket around end of verse references
+@]		Close bracket around end of verse references
+... 		Elipsis
+
+
+

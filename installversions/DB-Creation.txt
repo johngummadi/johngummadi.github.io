@@ -1,0 +1,16 @@
+TODO: Update this with all tables, so we can run a script to install database in case of database loss.
+
+Last updated date/time: 4:24 PM 9/24/2010
+
+
+// Visitors table
+CREATE TABLE  `davean8_Bible`.`Visitors` (
+`ID` INT UNSIGNED NOT NULL COMMENT  'Visit ID',
+`IPAddress` CHAR( 20 ) NOT NULL COMMENT  'IP Address of the visitor',
+`DateTime` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+`UserID` INT NOT NULL DEFAULT  '-1' COMMENT  'If no user, it will be -1',
+`VersionString` TEXT NOT NULL ,
+PRIMARY KEY (  `ID` )
+) ENGINE = MYISAM COMMENT =  'Visitor table, every time someone uses Cloud Bible app, this table gets updated.';
+
+

@@ -1,0 +1,28 @@
+10
+
+dir
+0
+https://subversion.assembla.com/svn/cloudstudybible/trunk/installversions/web/Output
+https://subversion.assembla.com/svn/cloudstudybible
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+a4e5520a-81d0-48d0-a013-03e5254a7739
+

@@ -1,0 +1,199 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+.commentstextarea {
+	position:relative;
+	font-size: 16px;
+	height:90%;
+	width:100%;
+	left: 5px;
+	right: 5px;
+	text-align: left;
+	color:rgb(200,200,200);
+	overflow-y:auto;
+}
+
+.button {
+	padding: 5px 10px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	color: white;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+	background-image: -webkit-gradient(linear, 0% 0%, 0%100%, from(#52A8E8), to(#377AD0));
+	background-image: -moz-linear-gradient(0% 100% 90deg,#377AD0, #52A8E8);
+	background-color: #52A8E8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #20559A;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5), inset 0 1px 1px rgba(255,255,255,.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5), inset 0 1px 1px rgba(255,255,255,.5);
+	-o-box-shadow: 0 1px 2px rgba(0,0,0,.5), inset 0 1px 1px rgba(255,255,255,.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,.5), inset 0 1px 1px rgba(255,255,255,.5);
+}
+
+.button:hover, .button:focus {
+	background-image: -webkit-gradient(linear, 0% 0%, 0%100%, from(#54A1D8), to(#1967CA));
+	background-image: -moz-linear-gradient(0% 100% 90deg,#1967CA, #54A1D8);
+	background-color: #52A8E8;
+color: white;
+}
+
+.button:active {
+background: #2D7CD1;
+-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.7);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+-o-box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+color: white;
+}
+
+.boxbutton { 
+	padding-left: 2px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	color: white;
+	text-shadow: 0 -1px 1px rgba(0,0,0,.3);
+	background-color: rgb(65,154,232);
+	border: 3px solid #20559A;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+
+.boxbutton:hover, .boxbutton:focus {
+	background-color: #52A8E8;
+color: white;
+}
+
+.boxbutton:active {
+	background: #2D7CD1;
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.7);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+	-o-box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 1px rgba(255,255,255,.5);
+	color: white;
+}
+
+div.commenttitle {
+	border-color: #606060;
+	border-style: solid;
+	border-width: 1px;
+	width: 94%;
+	height: 12px;
+	padding:.5em;
+	background-image: url('title_background.jpg');
+	background-repeat: repeat;
+	position: relative;
+}
+
+div.commentarea {
+	border-bottom: 1px solid #606060;
+	border-left: 1px solid #606060;
+	border-right: 1px solid #606060;
+	background-color: #F7F7F7;
+	position: relative;
+	width: 94%;
+	height: 95%;
+	padding:.5em;
+}
+
+
+#header, #footer {
+	text-align: center;
+	background-repeat:repeat;
+	color: #ffffff;
+}
+#header {
+	background-color: #F7F7F7;
+	height: 80px;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	position: absolute;
+	visibility: hidden;
+	border-top: 2px solid #606060;
+	border-left: 2px solid #606060;
+	border-right: 2px solid #606060;
+	border-bottom: 2px solid #606060;
+	border-color:#606060;
+}
+#footer {
+	height: 40px;
+	visibility: hidden;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	position: absolute;
+	border-style:solid;
+	border-width:2px;
+	border-color:#606060;
+}
+
+#verses {
+	background-color: #F7F7F7;
+}
+
+#books, #chapters {
+	
+}
+
+#content {
+	margin-left: 212px;
+	margin-right: 62px;
+	margin-bottom: 62px;
+	top: 90px;
+	position: absolute;
+	border-style:solid;
+	border-width:2px;
+	border-color:#606060;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+
+#left, #right{
+	position: absolute;
+	top: 90px;
+	margin-bottom: 62px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#606060;
+	background-color: #F7F7F7;
+}
+
+#left {
+	left: 4px;
+	width: 200px;
+	visibility: hidden;
+}
+#right {
+	right: 4px;
+	width: 100px;
+	visibility: hidden;
+}
+body {
+	font: medium verdana, arial, sans-serif;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p {
+	text-align: justify;
+	margin-top: 6pt;
+	margin-bottom: 0;
+}

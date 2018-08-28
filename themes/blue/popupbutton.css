@@ -1,0 +1,62 @@
+.popupbutton
+{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(90,171,242);
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:7px;
+	padding-right:7px;
+	text-align: center;
+	color:rgb(255,255,255);
+	font-size:11px;
+	font-weight:bold;
+	user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+}
+
+.popupbutton:hover
+{
+	background-color: #27507A;
+	cursor:pointer;	
+}
+
+.poppedupbutton
+{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #27507A;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:7px;
+	padding-right:7px;
+	text-align: center;
+	color:rgb(255,255,255);
+	font-size:11px;
+	font-weight:bold;
+	user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+}
+
+
+.poppedupbutton:hover
+{
+	cursor:pointer;	
+}
+
+.poppedupbutton_border
+{
+	border-top: solid 1px #27507A;
+	border-left: solid 1px #27507A;
+	border-right: solid 1px #27507A;
+}

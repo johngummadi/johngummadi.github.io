@@ -1,0 +1,105 @@
+<html>
+<head>
+<script type="text/javascript" src="biblejs/gears.js"></script>
+
+<script type="text/javascript"> 
+if (GearInit() == false)
+	alert("Failed to get google gears permission");
+function LoadBooks(divID)
+{
+	//GearInit();
+	var addedToGears = true;
+	var div = document.getElementById(divID);
+	if (!div)
+	{
+		alert("Failed, invalid div");
+		return;
+	}
+	div.innerHTML = "<p>Getting books from the gears (1)</p>";
+	var booksArray = GearGetBooksKjv();
+	if (booksArray == null || booksArray.length<=0)
+	{
+		div.innerHTML = "<p>Getting books from the server...</p>";
+		booksArray = GetBooksFromServer();
+		if (booksArray == null)
+		{
+			div.innerHTML = "<p>Failed to get books from the server!</p>";
+			return;
+		}
+		div.innerHTML = "<p>Adding books to gears...</p>";
+		if (GearAddBooksKjv(booksArray) == false)
+		{
+			addedToGears = false;
+		}
+		
+		if (booksArray == null)
+		{
+			div.innerHTML = "<p>Failed to get books from the gears!</p>";
+			return;
+		}
+	}
+	
+	if (addedToGears == false)
+	{
+		div.innerHTML = "<p>Failed to add to the gears database!</p> <p>";
+	}
+	else
+	{
+		div.innerHTML = "<p>";
+	}
+	
+	for(var i=0; i<booksArray.length; i++)
+	{
+		div.innerHTML += (i+1) + ". " + booksArray[i]["fullName"] + "<br>";
+	}
+	div.innerHTML += "</p>";
+} //LoadBooks()
+
+function GetBooksFromServer()
+{
+	var url = "./biblejs/getbooks.php";
+	var booksContent = null;
+	var xmlhttpBooks = null;
+	var bodyMsg = new Array();
+	if (window.XMLHttpRequest) // code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttpBooks=new XMLHttpRequest();
+	else //// code for IE6, IE5
+		xmlhttpBooks=new ActiveXObject("Microsoft.XMLHTTP");	
+	xmlhttpBooks.open("GET",url,false);
+	xmlhttpBooks.send(bodyMsg);
+	booksContent = xmlhttpBooks.responseText;
+	
+	// convert server data to a multi-dimentional array
+	var booksArray = new Array();
+	var bookLines = booksContent.split('|');
+	var index = 0;
+	while (index < bookLines.length-1)
+	{
+		var line = "";
+		var bookLine = bookLines[index].split('^');
+		var id = bookLine[0];
+		var bookFullName = bookLine[1];
+		var chapterCount = bookLine[2];
+		var commentCount = bookLine[3];
+		var translationID = 1;
+		var bookShortName = "";
+		var testament = 1;
+		var notes = '';
+		if (id > 39)
+			testament = 2;
+		booksArray[index] = new Book(id, translationID, bookFullName, bookShortName, testament, chapterCount, notes);
+		index++;
+	}
+	return booksArray;
+} //GetBooksFromServer()
+
+</script>
+</head>
+
+<body>
+	<INPUT Type=Button onClick="javascript:LoadBooks('BooksDiv');" VALUE="Load Books">
+	<div id = "BooksDiv">
+		<p>The books of the Bible will be displayed here.</p>
+	</div>
+</body>
+</html>

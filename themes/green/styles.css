@@ -1,0 +1,311 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+div.commenttitle {
+	border-color: #006000;
+	border-style: solid;
+	border-width: 1px;
+	width: 94%;
+	height: 12px;
+	padding:.5em;
+	background-image: url('title_background.jpg');
+	background-repeat: repeat;
+	position: relative;
+}
+
+div.commentarea {
+	border-bottom: 1px solid #006000;
+	border-left: 1px solid #006000;
+	border-right: 1px solid #006000;
+	background-color: #F7FFF7;
+	position: relative;
+	width: 94%;
+	height: 95%;
+	padding:.5em;
+}
+
+#searchBar {
+	width:250px;
+	padding-right:7px;
+	padding-top:0px;
+}
+
+#searchButtonID {
+	float:right;
+	width: 65px;
+	height: 22px;
+	padding-right:1px;
+	padding-top:0px;
+}
+
+#searchTextID {
+	float:left;
+	height: 15px;
+	width: 200px;
+	margin-right:4px;
+}
+
+#searchDiv {
+	float:right;
+	padding-right:7px;
+	padding-top:0px;
+}
+
+#headerContent, #footerContent {
+	padding-top:.5em;
+}
+
+
+#header, #footer {
+	text-align: center;
+	background-repeat:repeat;
+	color: #ffffff;
+}
+#header {
+	background-color: #F7FFF7;
+	height: 80px;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	position: absolute;
+	visibility: hidden;
+	border-top: 2px solid #006000;
+	border-left: 2px solid #006000;
+	border-right: 2px solid #006000;
+	border-bottom: 2px solid #006000;
+}
+#footer {
+	height: 40px;
+	visibility: hidden;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	position: absolute;
+	border-style:solid;
+	border-width:2px;
+	border-color:#006000;
+}
+
+#verses {
+	background-color: #F7FFF7;
+}
+
+
+#booksContent, #versesContent, #chaptersContent {
+	autoScroll: true;
+	overflow:auto;
+}
+#chaptersContent {
+	font: medium small, arial, sans-serif; 
+}
+
+#books, #chapters {
+	
+}
+
+#content {
+	margin-left: 212px;
+	margin-right: 62px;
+	margin-bottom: 62px;
+	top: 90px;
+	position: absolute;
+	border-style:solid;
+	border-width:2px;
+	border-color:#006000;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+
+#left, #right{
+	position: absolute;
+	top: 90px;
+	margin-bottom: 62px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#006000;
+	background-color: #F7FFF7;
+}
+
+#left {
+	left: 4px;
+	width: 200px;
+	visibility: hidden;
+}
+#right {
+	right: 4px;
+	width: 78px;
+	visibility: hidden;
+}
+body {
+	font: medium verdana, arial, sans-serif;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p {
+	text-align: justify;
+	margin-top: 6pt;
+	margin-bottom: 0;
+}
+
+
+.BackButton{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(90,171,242);
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:7px;
+	padding-right:7px;
+	text-align: center;
+	color:rgb(255,255,255);
+	font-size:11px;
+	font-weight:bold;
+	user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	width:20px;
+	height:10px;
+	margin-top:3px;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:5px;
+	border:1px solid rgb(220,220,220);
+	
+	background-image: url('back.png');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.BackButton:hover
+{
+	background-color: rgb(70,151,222);
+	background-image: url('back.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	cursor:pointer;	
+}
+.BackButton:active
+{
+	background-color: rgb(40,121,192);
+	background-image: url('back.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	border:1px solid rgb(240,240,240);
+}
+
+
+.ForwardButton{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(90,171,242);
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:7px;
+	padding-right:7px;
+	text-align: center;
+	color:rgb(255,255,255);
+	font-size:11px;
+	font-weight:bold;
+	user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	width:20px;
+	height:10px;
+	margin-top:3px;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:5px;
+	border:1px solid rgb(220,220,220);
+	
+	background-image: url('forward.png');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.ForwardButton:hover
+{
+	background-color: rgb(70,151,222);
+	background-image: url('forward.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	cursor:pointer;	
+}
+.ForwardButton:active
+{
+	background-color: rgb(40,121,192);
+	background-image: url('forward.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	border:1px solid rgb(240,240,240);
+}
+
+.HistoryButton{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: rgb(90,171,242);
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:7px;
+	padding-right:7px;
+	text-align: center;
+	color:rgb(255,255,255);
+	font-size:11px;
+	font-weight:bold;
+	user-select: none; 
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	-webkit-user-select: none; 
+	-o-user-select: none; 
+	width:20px;
+	height:10px;
+	margin-top:3px;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:5px;
+	border:1px solid rgb(220,220,220);
+	
+	background-image: url('history.png');
+	background-repeat: no-repeat;
+	background-position:center;
+}
+.HistoryButton:hover
+{
+	background-color: rgb(70,151,222);
+	background-image: url('history.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	cursor:pointer;	
+}
+.HistoryButton:active
+{
+	background-color: rgb(40,121,192);
+	background-image: url('history.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	border:1px solid rgb(240,240,240);
+}
+
+.widgetheader
+{
+	background: -moz-linear-gradient(top, #aaaaaa, #777777);
+	background: -ms-linear-gradient(top, #aaaaaa, #777777);
+	background: -o-linear-gradient(top, #aaaaaa, #777777);
+	background: -webkit-linear-gradient(top, #aaaaaa, #777777);
+	background: linear-gradient(top, #aaaaaa, #777777);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaaaaa, endColorstr=#777777);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaaaaa, endColorstr=#777777)";
+	color: #ffffff;
+}
